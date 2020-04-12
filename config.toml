@@ -1,8 +1,9 @@
-baseURL = "https://example.com"
+baseURL = "https://zay.as"
 languageCode = "en-us"
 title = "Noteworthy"
 theme = "hugo-theme-noteworthy"
 enableRobotsTXT = true
+enableEmoji = true
 paginate = 4 # Set the number of posts to show before overflowing to the next page.
 summaryLength = 10 # Configure how long the post summary should be on the homepage.
 
@@ -18,7 +19,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   tag = "tags"
 
 [author]
-	name = "kimcc"
+	name = "Rafael Zayas"
 
 # Set to false to disallow raw HTML in markdown files
 [markup.goldmark.renderer]
