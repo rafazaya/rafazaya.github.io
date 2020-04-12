@@ -5,3 +5,4 @@
 public/
 blogdown/
 thumbs.db
+content/post/*.html

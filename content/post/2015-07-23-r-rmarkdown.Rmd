@@ -9,6 +9,6 @@ categories: ["hello"]
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-# R Markdown
+# Intro
 
 Ughh Katy wants to see a blog post but  it's late and my code isn't ready yet.
