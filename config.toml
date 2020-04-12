@@ -33,14 +33,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 	# Add links to your accounts. Remove the ones you don't want to include.
 	# Main
 	email = "#"
-  facebook = "https://www.facebook.com/rafaelzayas"
-  twitter = "#"
-	instagram = "#"
-	linkedin = "#"
+  twitter = "https://twitter.com/rafazaya"
+	linkedin = "https://www.linkedin.com/in/rafaelz/"
 
 	# Programming
-  github = "#"
-	stackoverflow = "#"
+  github = "https://github.com/rafazaya"
+	stackoverflow = "https://stackoverflow.com/users/3027540/rafael-zayas"
 
 # Menu links along the sidebar navigation.
 [[menu.main]]
