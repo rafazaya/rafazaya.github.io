@@ -8,7 +8,7 @@ title: Hello World
 type: post
 ---
 
-I have now provem to myself that I can generate a website.
+I have now proven to myself that I can generate a website.
 
 {{< css.inline >}}
 <style>
