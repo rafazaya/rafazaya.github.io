@@ -1,0 +1,25 @@
+---
+title: "Tech Setup"
+author: "Rafael Zayas"
+date: 2020-04-18
+tags: ["tech-setup", "LTS"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+I'm using this website to store for my own records how I've set up my environment, and perhaps others will find this 
+useful.
+
+## R and RStudio
+This site is created using the [blogdown package](https://bookdown.org/yihui/blogdown/).
+
+## VS Code
+At some point I'll write a post about how annoying it is to use PowerShell + VS Code on windows.
+
+## Jupyter Lab
+I am restarting my home toy work setup, but I'll keep this updated as I toy with things.  My goal is to hopefully be able to create posts using either RStudio and Rmarkdown, jupyter lab, or just plain markdown, with hugo building the site no matter the source.  Once I get that running, this will likely be updated (remember, this page is LTS)
+
+## Favicon generator
+I ended up using https://realfavicongenerator.net/, using an image I created from an svg with text that most resembled a cell in a juptyer notebook that was running.  I don't know enough to recommend that site specifically, but I have no complaints.

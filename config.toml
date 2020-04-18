@@ -1,6 +1,6 @@
-baseURL = "https://zay.as"
+baseURL = "https://zay.as/"
 languageCode = "en-us"
-title = "RZayas"
+title = "zay.as"
 theme = "hugo-theme-noteworthy"
 enableRobotsTXT = true
 enableEmoji = true
@@ -28,13 +28,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [params]
 	math = true
 	# Blog description at the top of the homepage. Supports markdown.
-	description = "Noteworthy is a minimalist Hugo theme, perfect for writers and bloggers."
+	description = "😉 and 😒 and 👍 and..."
 
 	# Add links to your accounts. Remove the ones you don't want to include.
 	# Main
 	email = "#"
   twitter = "https://twitter.com/rafazaya"
-	linkedin = "https://www.linkedin.com/in/rafaelz/"
 
 	# Programming
   github = "https://github.com/rafazaya"

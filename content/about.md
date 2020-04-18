@@ -1,25 +1,16 @@
 ---
-date: "2020-04-11"
+date: "2020-04-18"
 title: About
 type: section
 ---
 
-I need to update this obviously...
-Written in Go, Hugo is an open source static site generator available under the [Apache License 2.0](https://github.com/gohugoio/hugo/blob/master/LICENSE). Hugo supports TOML, YAML, and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+I've been slowly working towards building a site for myself, with multiple years breaks - having kids slows things down.
+I'll probably focus around a few main tags, and I'll work on keeping reference of those here.  I consider myself 
+moderately technical, but this is not my day job - I work in financial services, but I won't be discussing that.  I'll mostly talk about questions that interest me, and any technology I use to answer those questions.
 
-Hugo makes use of a variety of open source projects including:
 
-* [Blackfriday](https://github.com/russross/blackfriday)
-* [Chroma](https://github.com/alecthomas/chroma)
-* [Smartcrop](https://github.com/muesli/smartcrop)
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
+The proximate cause of getting this working is that I've been working on some local coronavirus data,
+but I am curious about local (Morris County, NJ, USA) data, so I want a place to collect all the info I go through.
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
-
+### LTS
+One concept I really want to try to keep going is having [LTS](/tags/lts/) as in long-term support posts, where I keep things updated that I will be continaully working on.  For instance, I'll keep my [Tech Setup](/post/2020-04-18-tech-setup/) page
