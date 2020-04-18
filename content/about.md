@@ -13,4 +13,4 @@ The proximate cause of getting this working is that I've been working on some lo
 but I am curious about local (Morris County, NJ, USA) data, so I want a place to collect all the info I go through.
 
 ### LTS
-One concept I really want to try to keep going is having [LTS](/tags/lts/) as in long-term support posts, where I keep things updated that I will be continaully working on.  For instance, I'll keep my [Tech Setup](/post/2020-04-18-tech-setup/) page
+One concept I really want to try to keep going is having [LTS](/tags/lts/) as in long-term support posts, where I keep things updated that I will be continaully working on.  For instance, I'll keep my [Tech Setup](/post/tech-setup/) page
