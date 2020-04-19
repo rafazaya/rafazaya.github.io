@@ -1,0 +1,28 @@
+---
+title: Cribbing Some CV Work
+author: Rafael Zayas
+date: '2020-04-18'
+slug: some-cv-work
+categories: []
+tags:
+  - cv
+  - LTS
+draft: yes
+---
+
+I really liked Kevin Systrom's work to track the rate of transmission, starting with [this jupyter notebook](https://github.com/k-sys/covid-19/blob/master/Realtime%20R0.ipynb), which is 😍.  Then, perhaps literally while I was working towards this post, he started publishing the results of the model he's using to a new site [rt.live](https://rt.live).  
+
+While he built that beautiful site, I've just been hacking on this a bit, and [I'm keeping a version on Azure Notebooks](https://notebooks.azure.com/zayas/projects/test-cv), with the big difference being I'll be looking at data by county, not by state.  Also, because my goal is to iterate through the stats more quickly, hopping county to county, I've hidden most of the code with a helper_functions.py file which contains most of the code - TIL you can import a python file into Azure Notebooks.
+
+I'm using the [NY Times data on github](https://github.com/nytimes/covid-19-data), which it seems Kevin has moved on from.  I'll likely update my code to match the same source as rt.live.  Now that my site is up and running and this post is up, I'll try to keep other aspects of my code updated with k-sys's github.  Here's a sample for my home county:
+
+[Morris County, NJ data](/samples/morris-county-stats.html)
+
+__Note 1__ This post will be updated for a while, and I don't intend to constantly make sure edits
+are easily read.  This is tracked on github if you're curious how this post evolved.
+
+__Note 2__ I haven't got a process from jupyter -> Hugo to work yet.
+I know about [this hugo_jupyter project](https://github.com/knowsuchagency/hugo_jupyter)) but it 
+hasn't been updated in ~ 3 years, so i'm hesitant to spend a lot of time digging into it. 
+[This](https://www.vincent-lunot.com/post/toward-publishing-jupyter-notebooks-with-hugo/) is only
+slightly more recent.

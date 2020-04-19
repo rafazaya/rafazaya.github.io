@@ -1,0 +1,25 @@
+---
+title: Cribbing Some CV Work
+author: Rafael Zayas
+date: '2020-04-18'
+slug: some-cv-work
+categories: []
+tags:
+  - cv
+  - LTS
+draft: yes
+---
+
+
+
+<p>I really liked Kevin Systrom’s work to track the rate of transmission, starting with <a href="https://github.com/k-sys/covid-19/blob/master/Realtime%20R0.ipynb">this jupyter notebook</a>, which is 😍. Then, perhaps literally while I was working towards this post, he started publishing the results of the model he’s using to a new site <a href="https://rt.live">rt.live</a>.</p>
+<p>While he built that beautiful site, I’ve just been hacking on this a bit, and <a href="https://notebooks.azure.com/zayas/projects/test-cv">I’m keeping a version on Azure Notebooks</a>, with the big difference being I’ll be looking at data by county, not by state. Also, because my goal is to iterate through the stats more quickly, hopping county to county, I’ve hidden most of the code with a helper_functions.py file which contains most of the code - TIL you can import a python file into Azure Notebooks.</p>
+<p>I’m using the <a href="https://github.com/nytimes/covid-19-data">NY Times data on github</a>, which it seems Kevin has moved on from. I’ll likely update my code to match the same source as rt.live. Now that my site is up and running and this post is up, I’ll try to keep other aspects of my code updated with k-sys’s github. Here’s a sample for my home county:</p>
+<p><a href="/samples/morris-county-stats.html">Morris County, NJ data</a></p>
+<p><strong>Note 1</strong> This post will be updated for a while, and I don’t intend to constantly make sure edits
+are easily read. This is tracked on github if you’re curious how this post evolved.</p>
+<p><strong>Note 2</strong> I haven’t got a process from jupyter -&gt; Hugo to work yet.
+I know about <a href="https://github.com/knowsuchagency/hugo_jupyter">this hugo_jupyter project</a>) but it
+hasn’t been updated in ~ 3 years, so i’m hesitant to spend a lot of time digging into it.
+<a href="https://www.vincent-lunot.com/post/toward-publishing-jupyter-notebooks-with-hugo/">This</a> is only
+slightly more recent.</p>
