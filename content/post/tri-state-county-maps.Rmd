@@ -1,0 +1,40 @@
+---
+title: Tri-State County Maps
+author: Rafael Zayas
+date: '2020-04-23'
+slug: tri-state-county-maps
+categories: []
+tags:
+  - cv
+  - geo
+draft: yes
+---
+
+I've never used any geospatial data or mapping in R, but I have admired the elegant examples online for a few years now.  Now that I find myself very interested in county-level data, it seems like a good time to try my hand at this.
+
+```{r setup conda env, message=TRUE, include=FALSE, paged.print=FALSE}
+knitr::opts_chunk$set(warning = TRUE)
+library(tidyverse, warn.conflicts = FALSE)
+library("reticulate")
+reticulate::use_condaenv(
+  condaenv = "mtcv",
+  conda="C:\\Users\\rafae\\Anaconda3\\Scripts\\conda.exe"
+)
+
+```
+
+
+```{python}
+from cvdata.statrunner import get_county_stats
+county_stats, county_smoothed, likely_range = get_county_stats("Morris", "New Jersey")
+
+```
+
+```{r}
+py$county_stats %>% head()
+```
+
+Sources/References used:    
++ [Census Bureau county shape data](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html)   
++ [leaflet package docs](https://rstudio.github.io/leaflet/map_widget.html)    
++ [R Graph Gallery](https://www.r-graph-gallery.com/map.html)    

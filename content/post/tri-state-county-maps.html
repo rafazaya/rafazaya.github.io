@@ -1,0 +1,24 @@
+---
+title: Tri-State County Maps
+author: Rafael Zayas
+date: '2020-04-23'
+slug: tri-state-county-maps
+categories: []
+tags:
+  - cv
+  - geo
+draft: yes
+---
+
+
+
+<p>I’ve never used any geospatial data or mapping in R, but I have admired the elegant examples online for a few years now. Now that I find myself very interested in county-level data, it seems like a good time to try my hand at this.</p>
+<pre class="python"><code>from cvdata.statrunner import get_county_stats
+county_stats, county_smoothed, likely_range = get_county_stats(&quot;Morris&quot;, &quot;New Jersey&quot;)</code></pre>
+<pre class="r"><code>py$county_stats %&gt;% head()</code></pre>
+<pre><code>## 2020-03-12 2020-03-13 2020-03-14 2020-03-15 2020-03-16 2020-03-17 
+##          1          3          5          6          8         19</code></pre>
+<p>Sources/References used:<br />
++ <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html">Census Bureau county shape data</a><br />
++ <a href="https://rstudio.github.io/leaflet/map_widget.html">leaflet package docs</a><br />
++ <a href="https://www.r-graph-gallery.com/map.html">R Graph Gallery</a></p>
