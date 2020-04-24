@@ -9,8 +9,9 @@ tags: ["tech-setup", "LTS"]
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-I'm using this website to store for my own records how I've set up my environment, and perhaps others will find this 
-useful.
+I'm using this website to store for my own records how I've set up my environment, 
+and perhaps others will find this useful.  I use windows, be forewarned.
+
 
 ## R and RStudio
 This site is created using the [blogdown package](https://bookdown.org/yihui/blogdown/).
@@ -20,6 +21,15 @@ At some point I'll write a post about how annoying it is to use PowerShell + VS 
 
 ## Jupyter Lab
 I am restarting my home toy work setup, but I'll keep this updated as I toy with things.  My goal is to hopefully be able to create posts using either RStudio and Rmarkdown, jupyter lab, or just plain markdown, with hugo building the site no matter the source.  Once I get that running, this will likely be updated (remember, this page is LTS)
+
+## Conda environment
+I like a few random things that I don't think are common.
+
+#### Site Packages
+I keep all my in progress packages in subfolders of %USERPROFILE%/Code/.  To be able to use these packages in subsequent code, I use a .pth that adds this code folder, which includes a line like 'C:/Users/xxxx/Code' (note the forward slashes).  I save the .pth in this folder for new enviornments: .../Anaconda3/envs/env-name/Lib/site-packages.
+
+I just hate having weird path issues, so if there's a solution that avoids muddying my path.  If there's support for a process to add packages, even if it's less clear and not as easy to understand, I take it.  That's the Lib sub folder of your conda env is the equivalent place for what you'd like for in a non-conda python configuration.
+
 
 ## Favicon generator
 I ended up using https://realfavicongenerator.net/, using an image I created from an svg with text that most resembled a cell in a juptyer notebook that was running.  I don't know enough to recommend that site specifically, but I have no complaints.

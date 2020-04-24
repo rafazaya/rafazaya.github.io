@@ -7,8 +7,8 @@ tags: ["tech-setup", "LTS"]
 
 
 
-<p>I’m using this website to store for my own records how I’ve set up my environment, and perhaps others will find this
-useful.</p>
+<p>I’m using this website to store for my own records how I’ve set up my environment,
+and perhaps others will find this useful. I use windows, be forewarned.</p>
 <div id="r-and-rstudio" class="section level2">
 <h2>R and RStudio</h2>
 <p>This site is created using the <a href="https://bookdown.org/yihui/blogdown/">blogdown package</a>.</p>
@@ -20,6 +20,15 @@ useful.</p>
 <div id="jupyter-lab" class="section level2">
 <h2>Jupyter Lab</h2>
 <p>I am restarting my home toy work setup, but I’ll keep this updated as I toy with things. My goal is to hopefully be able to create posts using either RStudio and Rmarkdown, jupyter lab, or just plain markdown, with hugo building the site no matter the source. Once I get that running, this will likely be updated (remember, this page is LTS)</p>
+</div>
+<div id="conda-environment" class="section level2">
+<h2>Conda environment</h2>
+<p>I like a few random things that I don’t think are common.</p>
+<div id="site-packages" class="section level4">
+<h4>Site Packages</h4>
+<p>I keep all my in progress packages in subfolders of %USERPROFILE%/Code/. To be able to use these packages in subsequent code, I use a .pth that adds this code folder, which includes a line like ‘C:/Users/xxxx/Code’ (note the forward slashes). I save the .pth in this folder for new enviornments: …/Anaconda3/envs/env-name/Lib/site-packages.</p>
+<p>I just hate having weird path issues, so if there’s a solution that avoids muddying my path. If there’s support for a process to add packages, even if it’s less clear and not as easy to understand, I take it. That’s the Lib sub folder of your conda env is the equivalent place for what you’d like for in a non-conda python configuration.</p>
+</div>
 </div>
 <div id="favicon-generator" class="section level2">
 <h2>Favicon generator</h2>
