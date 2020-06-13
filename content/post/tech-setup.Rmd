@@ -22,6 +22,12 @@ At some point I'll write a post about how annoying it is to use PowerShell + VS 
 ## Jupyter Lab
 I am restarting my home toy work setup, but I'll keep this updated as I toy with things.  My goal is to hopefully be able to create posts using either RStudio and Rmarkdown, jupyter lab, or just plain markdown, with hugo building the site no matter the source.  Once I get that running, this will likely be updated (remember, this page is LTS)
 
+## git
+
+My main branch is called 'main', sanely enough.
+[how to change your default branch](https://www.hanselman.com/blog/EasilyRenameYourGitDefaultBranchFromMasterToMain.aspx)
+
+
 ## Conda environment
 I like a few random things that I don't think are common.
 

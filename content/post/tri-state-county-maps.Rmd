@@ -25,16 +25,16 @@ reticulate::use_condaenv(
 )
 shp_file_path = fs::fs_path("C:\\Users\\rafae\\Code\\cvdata\\cvdata\\geo-data\\tl_2019_us_county")
 shp_file_name = "tl_2019_us_county"
-stopifnot(is_dir(shp_file_path))
-stopifnot(is_file(shp_file_path / glue::glue("{shp_file_name}.shp")))
+stopifnot(fs::is_dir(shp_file_path))
+stopifnot(fs::is_file(shp_file_path / glue::glue("{shp_file_name}.shp")))
 
 
 ```
 
 
 ```{python}
-from cvdata.statrunner import get_county_stats
-county_stats, county_smoothed, likely_range = get_county_stats("Morris", "New Jersey")
+from cvdata.sources import county_stats
+county_stats = county_stats("Morris", "New Jersey")
 
 ```
 
