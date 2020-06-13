@@ -16,10 +16,18 @@ I've never used any geospatial data or mapping in R, but I have admired the eleg
 knitr::opts_chunk$set(warning = TRUE)
 library(tidyverse, warn.conflicts = FALSE)
 library("reticulate")
+library("leaflet")
+library("sp")
+library("rgdal")
 reticulate::use_condaenv(
   condaenv = "mtcv",
   conda="C:\\Users\\rafae\\Anaconda3\\Scripts\\conda.exe"
 )
+shp_file_path = fs::fs_path("C:\\Users\\rafae\\Code\\cvdata\\cvdata\\geo-data\\tl_2019_us_county")
+shp_file_name = "tl_2019_us_county"
+stopifnot(is_dir(shp_file_path))
+stopifnot(is_file(shp_file_path / glue::glue("{shp_file_name}.shp")))
+
 
 ```
 
@@ -30,11 +38,26 @@ county_stats, county_smoothed, likely_range = get_county_stats("Morris", "New Je
 
 ```
 
-```{r}
-py$county_stats %>% head()
+```{r county_data}
+# py$county_stats %>% head()
+# trying this approach
+counties <- rgdal::readOGR(shp_file_path, shp_file_name, GDAL1_integer64_policy = TRUE)
+tri_states_full <- subset(counties, counties$STATEFP %in% c("09","34","36")) # c("34"))  # tri-state: 
+tri_states <- rmapshaper::ms_simplify(tri_states_full)
+leaflet(tri_states) %>%
+  addPolygons(color = "#444444", weight = 1, smoothFactor = 0.5,
+    opacity = 1.0, fillOpacity = 0.5,
+    fillColor = ~colorQuantile("YlOrRd", ALAND)(ALAND),
+    highlightOptions = highlightOptions(color = "white", weight = 2,
+      bringToFront = TRUE))
 ```
 
 Sources/References used:    
-+ [Census Bureau county shape data](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html)   
++ [Census county shape data](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html)   
++ [Census tiger line files](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html)
 + [leaflet package docs](https://rstudio.github.io/leaflet/map_widget.html)    
-+ [R Graph Gallery](https://www.r-graph-gallery.com/map.html)    
++ [R Graph Gallery](https://www.r-graph-gallery.com/map.html)
++ [neonscience.org - helpful in understanding shapefiles](https://www.neonscience.org/dc-shapefile-attributes-r)
++ [SO answer re setting county boundaries](https://stackoverflow.com/a/56699861/3027540)
++ [SO answer for popups](https://stackoverflow.com/a/49212330/3027540)
+
